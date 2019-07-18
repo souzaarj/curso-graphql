@@ -1,0 +1,14 @@
+
+type escudos{
+pequeno:String 
+medio:String
+grande:String 
+}
+
+type Clube {
+    id: Int!
+    nome: String!
+    abreviacao:String!
+    escudos: escudos
+    nome_fantasia:String
+}

@@ -1,0 +1,67 @@
+
+type Lanterninha {
+            time_id: Int,
+            clube_id: Int,
+            esquema_id: Int,
+            globo_id: String,
+            foto_perfil: String,
+            nome: String,
+            nome_cartola: String,
+            slug: String,
+            url_escudo_svg:String,
+            url_escudo_png:String,
+            url_camisa_svg:String,
+            url_camisa_png:String,
+            rodada_time_id: Int
+        }
+
+type Liga{
+  liga_id:Int
+}
+
+ type Patrimonio {
+            time_id: Int
+            clube_id: Int
+            esquema_id: Int
+            foto_perfil: String
+            nome: String
+            nome_cartola: String
+            slug: String
+            url_escudo_svg: String
+            url_escudo_png: String
+            url_camisa_svg: String
+            url_camisa_png: String
+            rodada_time_id: Int
+           
+        }
+
+type Rodada {
+            time_id: Int
+            nome: String
+            clube_id: Int
+            esquema_id: Int
+             liga:Liga
+        }
+
+type Destaques{
+         rodada: Rodada
+         patrimonio: Patrimonio
+         lanterninha:Lanterninha
+         
+}
+
+type Pontos{
+        rodada:Float 
+}
+
+type Time {
+        time_id: Int
+        nome: String
+        pontos:Pontos
+}
+
+type  Cartola{
+         destaques: Destaques
+         liga:Liga
+         times:[Time]        
+}

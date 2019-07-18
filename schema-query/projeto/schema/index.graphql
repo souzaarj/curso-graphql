@@ -1,0 +1,7 @@
+#import Usuario, Perfil from 'Usuario.graphql'
+#import Produto from 'Produto.graphql'
+#import Clube from 'Clube.graphql'
+#import Query from 'Query.graphql'
+#import Mutation from 'Mutation.graphql'
+#import Liga from 'Cartola.graphql'
+
