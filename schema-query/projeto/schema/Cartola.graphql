@@ -57,6 +57,8 @@ type Pontos{
 type Time {
         time_id: Int
         nome: String
+        url_escudo_png: String
+        url_scudo_svg: String
         pontos:Pontos
 }
 
